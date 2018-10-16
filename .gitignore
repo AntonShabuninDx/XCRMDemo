@@ -1,0 +1,5 @@
+**/packages/**
+**.SCC
+**.vssscc
+**/bin/**
+**/obj/**
