@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBA62382-C9A9-458C-9B00-C9694227C6E3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>XCRM.Module</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XCRM.Module</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>5</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>5</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EasyTest</DefineConstants>
+    <LangVersion>5</LangVersion>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>..\packages\EntityFramework.6.1.3\lib\net45\</ReferencePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Charts.Core.18.2.2-pre-18288\lib\net452\DevExpress.Charts.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CodeParser.18.2.2-pre-18288\lib\net452\DevExpress.CodeParser.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Dashboard.Core.18.2.2-pre-18288\lib\net452\DevExpress.Dashboard.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.18.2.2-pre-18288\lib\net452\DevExpress.Data.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.DataAccess.18.2.2-pre-18288\lib\net452\DevExpress.DataAccess.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.AuditTrail.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.AuditTrail.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Chart.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Chart.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.CloneObject.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.CloneObject.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ConditionalAppearance.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.ConditionalAppearance.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Dashboards.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Dashboards.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.EF.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.EF.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.EF.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Images.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Images.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Images.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Kpi.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Kpi.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Kpi.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Notifications.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Notifications.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Notifications.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Objects.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Objects.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.PivotChart.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.PivotChart.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.PivotGrid.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.PivotGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ReportsV2.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.ReportsV2.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Scheduler.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Scheduler.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.EF.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Security.EF.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Security.EF.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Security.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Security.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.StateMachine.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.StateMachine.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.TreeListEditors.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.TreeListEditors.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Validation.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Validation.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ViewVariantsModule.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.ViewVariantsModule.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Xpo.18.2.2-pre-18288\lib\net452\DevExpress.ExpressApp.Xpo.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Images.18.2.2-pre-18288\lib\net452\DevExpress.Images.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Map.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Map.Core.18.2.2-pre-18288\lib\net452\DevExpress.Map.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Office.Core.18.2.2-pre-18288\lib\net452\DevExpress.Office.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Pdf.Core.18.2.2-pre-18288\lib\net452\DevExpress.Pdf.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Persistent.Base.18.2.2-pre-18288\lib\net452\DevExpress.Persistent.Base.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.EF.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.EF.18.2.2-pre-18288\lib\net452\DevExpress.Persistent.BaseImpl.EF.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Xpo.18.2.2-pre-18288\lib\net452\DevExpress.Persistent.BaseImpl.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.PivotGrid.Core.18.2.2-pre-18288\lib\net452\DevExpress.PivotGrid.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Printing.Core.18.2.2-pre-18288\lib\net452\DevExpress.Printing.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.RichEdit.Core.18.2.2-pre-18288\lib\net452\DevExpress.RichEdit.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.RichEdit.Export.18.2.2-pre-18288\lib\net452\DevExpress.RichEdit.v18.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Sparkline.Core.18.2.2-pre-18288\lib\net452\DevExpress.Sparkline.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.TreeMap.Core.18.2.2-pre-18288\lib\net452\DevExpress.TreeMap.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Utils.18.2.2-pre-18288\lib\net452\DevExpress.Utils.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Xpo.18.2.2-pre-18288\lib\net452\DevExpress.Xpo.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraBars.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Charts.18.2.2-pre-18288\lib\net452\DevExpress.XtraCharts.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraEditors.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Gauges.Core.18.2.2-pre-18288\lib\net452\DevExpress.XtraGauges.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v18.2.Presets, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Gauges.18.2.2-pre-18288\lib\net452\DevExpress.XtraGauges.v18.2.Presets.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v18.2.Win, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Gauges.18.2.2-pre-18288\lib\net452\DevExpress.XtraGauges.v18.2.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraLayout.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Map.18.2.2-pre-18288\lib\net452\DevExpress.XtraMap.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraNavBar.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraPivotGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraPrinting.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Reporting.Core.18.2.2-pre-18288\lib\net452\DevExpress.XtraReports.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Scheduler.Core.18.2.2-pre-18288\lib\net452\DevExpress.XtraScheduler.v18.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraTreeList.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.TreeMap.18.2.2-pre-18288\lib\net452\DevExpress.XtraTreeMap.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraVerticalGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.18.2.2-pre-18288\lib\net452\DevExpress.XtraWizard.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CreateLinkedSaleBaseDescendantController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CustomDeleteObjectsController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\HideToolbarForAddressDetailView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\MyAppUserController.cs" />
+    <Compile Include="Controllers\QualifyLeadController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomDatabaseInitializer.cs" />
+    <Compile Include="Dashboards\SqlDashboardHelper.cs" />
+    <Compile Include="Data\Account.cs" />
+    <Compile Include="Data\Activity.cs" />
+    <Compile Include="Data\Address.cs" />
+    <Compile Include="Data\Category.cs" />
+    <Compile Include="Data\Contact.cs" />
+    <Compile Include="Data\CRMAccount.cs" />
+    <Compile Include="Data\CRMActivity.cs" />
+    <Compile Include="Data\CRMContact.cs" />
+    <Compile Include="Data\CRMInvoice.cs" />
+    <Compile Include="Data\CRMLead.cs" />
+    <Compile Include="Data\CRMOpportunity.cs" />
+    <Compile Include="Data\CRMOrder.cs" />
+    <Compile Include="Data\CRMProduct.cs" />
+    <Compile Include="Data\CRMQuote.cs" />
+    <Compile Include="Data\Customer.cs" />
+    <Compile Include="Data\Invoice.cs" />
+    <Compile Include="Data\Lead.cs" />
+    <Compile Include="Data\Lead_Disqualify.cs" />
+    <Compile Include="Data\Lead_Qualify.cs" />
+    <Compile Include="Data\Lead_SaleStageHistory.cs" />
+    <Compile Include="Data\MyAppUser.cs" />
+    <Compile Include="Data\Note.cs" />
+    <Compile Include="Data\Opportunity.cs" />
+    <Compile Include="Data\Order.cs" />
+    <Compile Include="Data\Person.cs" />
+    <Compile Include="Data\Phone.cs" />
+    <Compile Include="Data\Product.cs" />
+    <Compile Include="Data\Quote.cs" />
+    <Compile Include="Data\SaleBase.cs" />
+    <Compile Include="Data\SaleItem.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\XCRMDbContext.cs" />
+    <Compile Include="Reports\ActiveInvoices.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ActiveInvoices.Designer.cs">
+      <DependentUpon>ActiveInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContactsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContactsReport.Designer.cs">
+      <DependentUpon>ContactsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SalesHistory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesHistory.Designer.cs">
+      <DependentUpon>SalesHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XCRMModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XCRMModule.Designer.cs">
+      <DependentUpon>XCRMModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <Subtype>Designer</Subtype>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ActiveInvoices.resx">
+      <DependentUpon>ActiveInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContactsReport.resx">
+      <DependentUpon>ContactsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesHistory.resx">
+      <DependentUpon>SalesHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XCRMModule.resx">
+      <DependentUpon>XCRMModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SvgImages\Demo_SalesOverview.svg" />
+    <EmbeddedResource Include="SvgImages\Demo_ShippingCountries.svg" />
+    <EmbeddedResource Include="Dashboards\SalesOverview.xml" />
+    <EmbeddedResource Include="Dashboards\GlobalSales.xml" />
+    <EmbeddedResource Include="Images\Demo_SalesOverview.png" />
+    <EmbeddedResource Include="Images\Demo_SalesOverview_32x32.png" />
+    <EmbeddedResource Include="Images\Demo_ShippingCountries.png" />
+    <EmbeddedResource Include="Images\Demo_ShippingCountries_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

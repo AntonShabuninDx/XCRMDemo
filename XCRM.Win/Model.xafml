@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="ExpressAppLogo">
+  <BOModel>
+    <Class Name="XCRM.Module.Data.Note">
+      <OwnMembers>
+        <Member Name="Description" PropertyEditorType="DevExpress.ExpressApp.Office.Win.RichTextPropertyEditor" DocumentStorageFormat="HTML" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems RootGroupsStyle="OutlookAnimated">
+    <Items>
+      <Item Id="Workplace">
+        <Items>
+          <DashboardNavigationItem Id="Sales Overview" ImageName="Demo_SalesOverview" />
+          <DashboardNavigationItem Id="Global Sales" ImageName="Demo_ShippingCountries" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="SingleWindowSDI" FormStyle="Ribbon" EnableHtmlFormatting="True" />
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="13.1.1.0" IsNewNode="True" />
+  </SchemaModules>
+  <Templates>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.Ribbon.MainRibbonFormV2" IsNewNode="True">
+      <FormStates IsNewNode="True">
+        <FormState Id="Default" State="Maximized" IsNewNode="True" />
+      </FormStates>
+    </Template>
+  </Templates>
+  <Views>
+    <ListView Id="CRMActivity_LookupListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
+    <ListView Id="CRMInvoice_ListView_Chart" EditorTypeName="DevExpress.ExpressApp.Chart.Win.ChartListEditor" />
+    <ListView Id="CRMInvoice_ListView_PivotGrid" EditorTypeName="DevExpress.ExpressApp.PivotGrid.Win.PivotGridListEditor" />
+    <DetailView Id="MyAppUser_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Roles_Group" TextAlignMode="AlignWithChildren" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CRMContact_DetailView">
+      <Items>
+        <PropertyEditor Id="Photo" ImageEditorFixedHeight="90" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main_">
+          <LayoutGroup Id="Item1" RelativeSize="39.875389408099686">
+            <LayoutGroup Id="Autobfcb965d-e818-4359-9850-40babf902f6f" RelativeSize="73.148148148148152">
+              <LayoutGroup Id="Auto442f2db5-6348-48a6-862c-0366fd4463ea" Direction="Vertical" RelativeSize="100">
+                <LayoutGroup Id="Autob089690e-f811-42eb-9848-d49db564fe23" Caption="Autob089690e-f811-42eb-9848-d49db564fe23(5)" RelativeSize="100" Direction="Horizontal">
+                  <LayoutGroup Id="Auto59af0f7d-c234-46d2-9941-e810148d273a" ShowCaption="False" Caption="" Index="0" RelativeSize="50.632911392405063" IsNewNode="True">
+                    <LayoutItem Id="FirstName" ViewItem="FirstName" Index="0" RelativeSize="14.414414414414415" IsNewNode="True" />
+                    <LayoutItem Id="LastName" ViewItem="LastName" Index="1" RelativeSize="10.810810810810811" IsNewNode="True" />
+                    <LayoutItem Id="FullName" ViewItem="FullName" Index="2" RelativeSize="10.810810810810811" IsNewNode="True" />
+                    <LayoutItem Id="BirthDate" ViewItem="BirthDate" Index="3" RelativeSize="63.963963963963963" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto9220ef9a-7d85-4ec0-bd86-a7d724be79ba" ShowCaption="False" Caption="" Index="1" RelativeSize="49.367088607594937" IsNewNode="True">
+                    <LayoutItem Id="Gender" ViewItem="Gender" Index="0" RelativeSize="14.414414414414415" IsNewNode="True" />
+                    <LayoutItem Id="MaritalStatus" ViewItem="MaritalStatus" Index="1" RelativeSize="10.810810810810811" IsNewNode="True" />
+                    <LayoutItem Id="Account" ViewItem="Account" Index="2" RelativeSize="10.810810810810811" IsNewNode="True" />
+                    <LayoutItem Id="JobTitle" ViewItem="JobTitle" Index="3" RelativeSize="63.963963963963963" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutItem Id="BirthDate" RelativeSize="10.810810810810811" Removed="True" />
+                  <LayoutItem Id="FirstName" RelativeSize="14.414414414414415" Removed="True" />
+                  <LayoutItem Id="FullName" RelativeSize="10.810810810810811" Removed="True" />
+                  <LayoutItem Id="LastName" RelativeSize="10.810810810810811" Removed="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto5be4e914-38a0-4ac9-8ab8-fb706e467198" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Autoc9df9114-021b-42ad-8293-38b1fc9b303d" Removed="True" />
+            </LayoutGroup>
+            <LayoutItem Id="Photo" CaptionLocation="Left" RelativeSize="26.851851851851851" />
+          </LayoutGroup>
+          <LayoutGroup Id="Item4" RelativeSize="21.495327102803738">
+            <LayoutGroup Id="Item2" RelativeSize="49.814814814814817" />
+            <LayoutGroup Id="Item9" RelativeSize="50.185185185185183" />
+          </LayoutGroup>
+          <LayoutGroup Id="Item5" RelativeSize="19.626168224299064">
+            <LayoutGroup Id="Item6">
+              <LayoutItem Id="Owner" RelativeSize="49.814814814814817" />
+              <LayoutItem Id="SourceLead" RelativeSize="50.185185185185183" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item7">
+              <LayoutItem Id="CreditLimit" RelativeSize="49.814814814814817" />
+              <LayoutItem Id="CreditHold" RelativeSize="50.185185185185183" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="19.003115264797508">
+            <LayoutGroup Id="Opportunities" TextAlignMode="AlignWithChildren">
+              <LayoutItem Id="Opportunities" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Orders" TextAlignMode="AlignWithChildren">
+              <LayoutItem Id="Orders" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Quotes" TextAlignMode="AlignWithChildren">
+              <LayoutItem Id="Quotes" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Invoices" TextAlignMode="AlignWithChildren">
+              <LayoutItem Id="Invoices" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Notes" TextAlignMode="AlignWithChildren">
+              <LayoutItem Id="Notes" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

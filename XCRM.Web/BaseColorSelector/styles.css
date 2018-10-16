@@ -1,0 +1,169 @@
+﻿/* -- Theme Settings -- */
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("Fonts/CustomFont1.woff") format('woff');
+}
+
+@font-face {
+    font-family: "coda";
+    src: url("Fonts/CustomFont2.woff") format('woff');
+}
+
+.ThemeButton {
+    color: #2C86D3;
+    width: 140px;
+    display: inline-table;
+}
+
+    .ThemeButton span {
+        float: left;
+        text-decoration: underline;
+    }
+
+    .ThemeButton img {
+        float: left;
+        margin-right: 6px;
+    }
+
+.color-selector-container {
+    width: 160px;
+    display: inline-block;
+    padding-top: 6px;
+}
+
+    .color-selector-container .ColorSelectorPopup {
+        background-color: transparent!important;
+        border: 0!important;
+        z-index: 11000!important;
+    }
+
+        .color-selector-container .ColorSelectorPopup .dxpc-content {
+            padding: 0!important;
+            font: 13px 'Segoe UI', 'Helvetica Neue', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+            color: #3c3c3c;
+        }
+
+        .color-selector-container .ColorSelectorPopup .colors-container-wrapper {
+            padding: 0 10px 20px 10px;
+            overflow: hidden;
+            width: 276px;
+            display: inline-block;
+            margin-top: -1px;
+            margin-left: 20px;
+        }
+
+            .color-selector-container .ColorSelectorPopup .colors-container-wrapper .colors-container {
+                background-color: white;
+                border: 1px solid #b0b0b0;
+                -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+                padding: 16px 21px 21px;
+                clear: both;
+            }
+
+                .color-selector-container .ColorSelectorPopup .colors-container-wrapper .colors-container .base-color-container {
+                    padding-bottom: 12px;
+                }
+
+                .color-selector-container .ColorSelectorPopup .colors-container-wrapper .colors-container .caption,
+                .color-selector-container .ColorSelectorPopup .colors-container-wrapper .colors-container .caption-font {
+                    font: 14px 'Segoe UI', 'Helvetica Neue', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+                    color: #848484;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 2px;
+                    display: block;
+                }
+
+                .color-selector-container .ColorSelectorPopup .colors-container-wrapper .colors-container .caption-font {
+                    margin-bottom: 6px;
+                }
+
+            .color-selector-container .ColorSelectorPopup .colors-container-wrapper .dxEditors_edtRadioButtonChecked_Metropolis {
+                background-color: #ff8800;
+            }
+
+            .color-selector-container .ColorSelectorPopup .colors-container-wrapper .dxeBase_Metropolis.dxeTAR {
+                margin-bottom: 3px;
+            }
+
+        .color-selector-container .ColorSelectorPopup .button-wrapper {
+            overflow: hidden;
+            padding: 8px 10px 0 10px;
+            float: right;
+        }
+
+            .color-selector-container .ColorSelectorPopup .button-wrapper .color-button-border {
+                border: 1px solid #b0b0b0;
+                border-bottom-width: 0;
+                width: 164px;
+                height: 40px;
+            }
+
+        .color-selector-container .ColorSelectorPopup .button-wrapper-bottomBorder {
+            position: absolute;
+            width: 164px;
+            height: 1px;
+            background-color: white;
+            z-index: 1000;
+            top: 48px;
+            left: 141px;
+        }
+
+    .color-selector-container .color-item-container {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0px auto;
+        padding: 4px;
+    }
+
+        .color-selector-container .color-item-container .color-item-wrapper {
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            border: none;
+        }
+
+        .color-selector-container .color-item-container .color-item {
+            width: 100% !important;
+            height: 100%  !important;
+            border: none;
+        }
+
+.colors-container-wrapper .colors-container .dxe .dxeTAR .dxichTextCellSys {
+    font: 13px 'Segoe UI', 'Helvetica Neue', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    color: #848484;
+}
+
+    .colors-container-wrapper .colors-container .dxe .dxeTAR .dxichTextCellSys label {
+        margin-right: 0;
+    }
+
+.dxeRadioButtonList .dxe .dxeTAR {
+    margin-top: 2px;
+}
+
+/*.colors-container-wrapper .colors-container .dxichCellSys
+{
+padding-left: 0;
+}*/
+
+.color-selector-container .color-item-container .color-item.selected-item {
+    border: 1px solid white;
+    outline: 2px solid #F88E1D;
+}
+
+.color-selector-container .color-item.dxbButton {
+    background: none;
+}
+
+.color-selector-container .selected-color-icon {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-bottom: -3px;
+}

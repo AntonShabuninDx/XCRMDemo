@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TestRunTimeLimit="3" EnableUpperCase="XCRMFullWeb">
+	<Applications>
+		<!-- Win -->
+		<Application
+			Name="XCRMFullWin"
+			FileName="[ConfigPath]\..\XCRM.Win\bin\Debug\XCRM.Win.exe"
+			AdapterAssemblyName="DevExpress.ExpressApp.EasyTest.WinAdapter.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+			CommunicationPort="4100"/>
+		<!-- Web -->
+		<Application
+			Name="XCRMFullWeb"
+			Url="http://localhost:4030"
+			PhysicalPath="[ConfigPath]\..\XCRM.Web"
+			AdapterAssemblyName="DevExpress.ExpressApp.EasyTest.WebAdapter.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+		<!-- For IIS -->
+		<!--Application
+			Name="XCRMFullWeb"
+			Url="http://localhost/XCRMWeb/Default.aspx"
+			AdapterAssemblyName="DevExpress.ExpressApp.EasyTest.WebAdapter.v18.2, Version=18.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/-->
+	</Applications>
+	<TestDatabases>
+		<Database xsi:type="TestMSSQLDatabase" Server="(localdb)\mssqllocaldb" Name="XCRM_EasyTest" DBName="XCRM_18.2"/>
+	</TestDatabases>
+</Options>

@@ -1,0 +1,83 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCRM.Win", "XCRM.Win\XCRM.Win.csproj", "{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCRM.Web", "XCRM.Web\XCRM.Web.csproj", "{CA2AAF37-8C09-4F5E-B05F-180D991A3693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCRM.Module", "XCRM.Module\XCRM.Module.csproj", "{BBA62382-C9A9-458C-9B00-C9694227C6E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCRM.Module.Web", "XCRM.Module.Web\XCRM.Module.Web.csproj", "{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EasyTests", "EasyTests", "{A7286686-CCA3-4B08-8A54-A10E5661834A}"
+	ProjectSection(SolutionItems) = preProject
+		EasyTests\Config.xml = EasyTests\Config.xml
+		EasyTests\XCRM_Account_AddressAndPhoneIsAgregated.ets = EasyTests\XCRM_Account_AddressAndPhoneIsAgregated.ets
+		EasyTests\XCRM_Account_CheckLookups.ets = EasyTests\XCRM_Account_CheckLookups.ets
+		EasyTests\XCRM_Account_Create.ets = EasyTests\XCRM_Account_Create.ets
+		EasyTests\XCRM_Account_Create2.ets = EasyTests\XCRM_Account_Create2.ets
+		EasyTests\XCRM_AddAccount.inc = EasyTests\XCRM_AddAccount.inc
+		EasyTests\XCRM_AddContact.inc = EasyTests\XCRM_AddContact.inc
+		EasyTests\XCRM_AddLead.inc = EasyTests\XCRM_AddLead.inc
+		EasyTests\XCRM_AddOpportunity.inc = EasyTests\XCRM_AddOpportunity.inc
+		EasyTests\XCRM_AddressFieldsIsVisible.inc = EasyTests\XCRM_AddressFieldsIsVisible.inc
+		EasyTests\XCRM_Contact_AddressAndPhoneIsAgregated.ets = EasyTests\XCRM_Contact_AddressAndPhoneIsAgregated.ets
+		EasyTests\XCRM_Contact_Create.ets = EasyTests\XCRM_Contact_Create.ets
+		EasyTests\XCRM_Event_Create.ets = EasyTests\XCRM_Event_Create.ets
+		EasyTests\XCRM_Event_Delete.ets = EasyTests\XCRM_Event_Delete.ets
+		EasyTests\XCRM_Lead_AddressAndPhoneIsAgregated.ets = EasyTests\XCRM_Lead_AddressAndPhoneIsAgregated.ets
+		EasyTests\XCRM_Lead_Create.ets = EasyTests\XCRM_Lead_Create.ets
+		EasyTests\XCRM_Lead_Disqualify.ets = EasyTests\XCRM_Lead_Disqualify.ets
+		EasyTests\XCRM_Lead_QualifiedIsDisabled.ets = EasyTests\XCRM_Lead_QualifiedIsDisabled.ets
+		EasyTests\XCRM_Lead_QualifyToAccount.ets = EasyTests\XCRM_Lead_QualifyToAccount.ets
+		EasyTests\XCRM_Lead_QualifyToAll.ets = EasyTests\XCRM_Lead_QualifyToAll.ets
+		EasyTests\XCRM_Lead_QualifyToContact.ets = EasyTests\XCRM_Lead_QualifyToContact.ets
+		EasyTests\XCRM_Login.inc = EasyTests\XCRM_Login.inc
+		EasyTests\XCRM_Opportunity_AddSaleItems.ets = EasyTests\XCRM_Opportunity_AddSaleItems.ets
+		EasyTests\XCRM_Opportunity_Close.ets = EasyTests\XCRM_Opportunity_Close.ets
+		EasyTests\XCRM_Opportunity_ClosedIsDisabled.ets = EasyTests\XCRM_Opportunity_ClosedIsDisabled.ets
+		EasyTests\XCRM_Opportunity_Create.ets = EasyTests\XCRM_Opportunity_Create.ets
+		EasyTests\XCRM_PhoneFieldsIsVisible.inc = EasyTests\XCRM_PhoneFieldsIsVisible.inc
+		EasyTests\XCRM_Product_Create.ets = EasyTests\XCRM_Product_Create.ets
+		EasyTests\XCRM_Report_Contact_ContactsReport.ets = EasyTests\XCRM_Report_Contact_ContactsReport.ets
+		EasyTests\XCRM_Role_CheckPermissionsEditor.ets = EasyTests\XCRM_Role_CheckPermissionsEditor.ets
+		EasyTests\XCRM_Role_Visible_EditModel.ets = EasyTests\XCRM_Role_Visible_EditModel.ets
+		EasyTests\XCRM_User_Create.ets = EasyTests\XCRM_User_Create.ets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2AAF37-8C09-4F5E-B05F-180D991A3693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2AAF37-8C09-4F5E-B05F-180D991A3693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2AAF37-8C09-4F5E-B05F-180D991A3693}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{CA2AAF37-8C09-4F5E-B05F-180D991A3693}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{CA2AAF37-8C09-4F5E-B05F-180D991A3693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2AAF37-8C09-4F5E-B05F-180D991A3693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA62382-C9A9-458C-9B00-C9694227C6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA62382-C9A9-458C-9B00-C9694227C6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA62382-C9A9-458C-9B00-C9694227C6E3}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{BBA62382-C9A9-458C-9B00-C9694227C6E3}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{BBA62382-C9A9-458C-9B00-C9694227C6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA62382-C9A9-458C-9B00-C9694227C6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AA8B47-7C74-43AA-9C9C-C4FAF4343022}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

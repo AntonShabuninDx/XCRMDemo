@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application CurrentUserDisplayMode="CaptionAndImage">
+  <Options CollectionsEditMode="Edit" />
+  <NavigationItems NavigationStyle="NavBar">
+    <Items>
+      <Item Id="Workplace">
+        <Items>
+          <DashboardNavigationItem Id="Sales Overview" ImageName="Demo_SalesOverview" />
+          <DashboardNavigationItem Id="Global Sales" ImageName="Demo_ShippingCountries" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerAspNetModule" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Options>
+    <LayoutManagerOptions CaptionColon="" />
+  </Options>
+  <Views>
+    <DetailView Id="KpiDefinition_DetailView">
+      <Layout>
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="Definition">
+            <LayoutGroup Id="61434787-29f4-487b-927f-4e94cd82f4e7">
+              <LayoutItem Id="Active" ShowCaption="True" />
+            </LayoutGroup>
+            <TabbedGroup Id="OptionsTabs">
+              <LayoutGroup Id="MeasurementOptions">
+                <LayoutGroup Id="0315973a-52e5-4f23-bf1c-e1786e7cb2f7">
+                  <LayoutItem Id="Compare" ShowCaption="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Preview">
+            <LayoutGroup Id="Objects_Group" ShowCaption="False" />
+            <LayoutItem Id="Current" Removed="True" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Lead_LookupListView">
+      <Columns>
+        <ColumnInfo Id="First Name" PropertyName="FirstName" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Name" PropertyName="Name" Index="-1" />
+        <ColumnInfo Id="LastName" PropertyName="LastName" Index="1" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="KpiDefinition_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" AdaptivePriority="1" />
+        <ColumnInfo Id="Active" AdaptivePriority="2" />
+        <ColumnInfo Id="TargetObjectType" AdaptivePriority="3" />
+        <ColumnInfo Id="GreenZone" AdaptivePriority="4" />
+        <ColumnInfo Id="RedZone" AdaptivePriority="5" />
+        <ColumnInfo Id="Compare" AdaptivePriority="6" />
+        <ColumnInfo Id="Range" AdaptivePriority="100" />
+        <ColumnInfo Id="RangeToCompare" AdaptivePriority="100" />
+        <ColumnInfo Id="MeasurementFrequency" AdaptivePriority="7" />
+        <ColumnInfo Id="Direction" AdaptivePriority="100" />
+        <ColumnInfo Id="Period" AdaptivePriority="100" />
+      </Columns>
+    </ListView>
+    <ListView Id="CRMActivity_LookupListView" EditorTypeName="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor" />
+    <ListView Id="CRMInvoice_Closed_ListView" InlineEditMode="EditFormAndDisplayRow" AllowEdit="True" />
+    <ListView Id="CRMInvoice_ListView_Chart" EditorTypeName="DevExpress.ExpressApp.Chart.Web.ASPxChartListEditor">
+      <ChartSettings PreferredHeight="500" />
+    </ListView>
+    <ListView Id="CRMInvoice_ListView_PivotGrid" EditorTypeName="DevExpress.ExpressApp.PivotGrid.Web.ASPxPivotGridListEditor" />
+    <ListView Id="CRMInvoice_MyOpen_ListView" InlineEditMode="EditFormAndDisplayRow" AllowEdit="True" />
+    <ListView Id="CRMInvoice_Open_ListView" InlineEditMode="EditFormAndDisplayRow" AllowEdit="True" />
+    <DetailView Id="Note_DetailView">
+      <Items>
+        <PropertyEditor Id="Description" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Web.ASPxHtmlPropertyEditor" />
+      </Items>
+    </DetailView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView_Demo">
+      <Items IsNewNode="True">
+        <StaticText Id="PasswordHint" Text="This demo app does not require a password for login" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">          
+          <LayoutGroup Id="WelcomeGroup" Index="0" CustomCSSClassName="WelcomeGroupClassCSS" Caption="" ShowCaption="False" IsNewNode="True">
+            <LayoutItem Id="WelcomeText" Index="0" ShowCaption="False" ViewItem="WelcomeText" CustomCSSClassName="WelcomeTextClassCSS" IsNewNode="True" />
+            <LayoutItem Id="PasswordHint" Index="1" ViewItem="PasswordHint" CustomCSSClassName="PasswordHintClassCSS" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="MainGroup" Index="1" CustomCSSClassName="MainGroupClassCSS" Caption="" ShowCaption="False" IsNewNode="True">
+            <LayoutItem Id="LogonText" Index="0" ViewItem="LogonText" ShowCaption="False" CustomCSSClassName="LogonTextClassCSS" IsNewNode="True" />
+            <LayoutItem Id="UserName" Index="1" ViewItem="UserName" CustomCSSClassName="LogonItemClassCSS" IsNewNode="True" />
+            <LayoutItem Id="Password" Index="2" ViewItem="Password" CustomCSSClassName="LogonItemClassCSS" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutItem Id="LogonText" Removed="True" />
+          <LayoutItem Id="Password" Removed="True" />
+          <LayoutItem Id="PasswordHint" Removed="True" />
+          <LayoutItem Id="UserName" Removed="True" />         
+          <LayoutItem Id="WelcomeText" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CRMLead_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main_">
+          <LayoutGroup Id="Item3" IsCollapsibleCardGroup="True" />
+          <LayoutGroup Id="Item4" IsCollapsibleCardGroup="True" />
+          <LayoutGroup Id="Item1" IsCollapsibleCardGroup="True" />
+          <LayoutGroup Id="Item6" IsCollapsibleCardGroup="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="MyAppUser_ListView">
+      <Columns>
+        <ColumnInfo Id="Photo" ImageEditorCustomHeight="85" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="LookupProperty" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridLookupPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="CRMProduct_DetailView">
+      <Items>
+        <PropertyEditor Id="Category" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxLookupPropertyEditor" />
+      </Items>
+    </DetailView>
+    <DetailView Id="CRMAccount_DetailView">
+      <Items>
+        <PropertyEditor Id="PrimaryContact" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxLookupPropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="Customer_LookupListView">
+      <Columns>
+        <ColumnInfo Id="CreditLimit" PropertyName="CreditLimit" Index="1"  IsNewNode="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
