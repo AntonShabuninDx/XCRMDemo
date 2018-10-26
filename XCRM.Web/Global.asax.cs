@@ -18,9 +18,6 @@ namespace XCRM.Web {
         }
 
         public Global() {
-#if DEBUG
-            DevExpress.EasyTest.Framework.EasyTestTracer.Tracer.SetTraceLevel(System.Diagnostics.TraceLevel.Verbose);
-#endif
             InitializeComponent();
         }
         protected void Application_Start(object sender, EventArgs e) {

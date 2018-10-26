@@ -80,10 +80,6 @@
     <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.DataAccess.18.2.2-beta\lib\net452\DevExpress.DataAccess.v18.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.EasyTest.v18.2">
-      <Private>False</Private>
-      <HintPath>..\..\..\..\2018.2\XAF\Bin\Framework4\DevExpress.EasyTest.v18.2.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.ExpressApp.AuditTrail.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.AuditTrail.18.2.2-beta\lib\net452\DevExpress.ExpressApp.AuditTrail.v18.2.dll</HintPath>
     </Reference>
